@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">NewsDemo</string>
+
+    <string name="news_title">早间新闻</string>
+    <string name="news_summary">新闻摘要</string>
+    <string name="news_content">......</string>
+</resources>
