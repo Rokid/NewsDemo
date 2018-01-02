@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by showingcp on 3/13/17.
+ * Created by fanfeng on 2017/12/11.
  */
 
 public class NLPBean extends BaseBean {
@@ -27,7 +27,7 @@ public class NLPBean extends BaseBean {
     /**
      * parameters for the intent key value string pairs
      */
-    private Map<String, String> slots = new HashMap<String, String>();
+    private Map<String, SlotItem> slots = new HashMap<>();
     /**
      * nlp parse startPlay position
      */
@@ -91,11 +91,11 @@ public class NLPBean extends BaseBean {
         this.confirm = confirm;
     }
 
-    public Map<String, String> getSlots() {
+    public Map<String, SlotItem> getSlots() {
         return slots;
     }
 
-    public void setSlots(Map<String, String> slots) {
+    public void setSlots(Map<String, SlotItem> slots) {
         this.slots = slots;
     }
 
@@ -139,7 +139,7 @@ public class NLPBean extends BaseBean {
         this.version = version;
     }
 
-    public void addSlot(String key, String value) {
+    public void addSlot(String key, SlotItem value) {
         this.slots.put(key, value);
     }
 
@@ -166,4 +166,5 @@ public class NLPBean extends BaseBean {
     public void setCloud(boolean cloud) {
         this.cloud = cloud;
     }
+
 }
