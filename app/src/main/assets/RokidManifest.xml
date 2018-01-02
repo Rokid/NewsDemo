@@ -1,4 +1,3 @@
-<!--native app 配置文件-->
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:rokid="http:www.rokid-inc.com" rokid:version="1.0.0">
     <application rokid:isSystem="false">
